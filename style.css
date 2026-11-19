@@ -1,0 +1,102 @@
+:root{--teal:#0f5c63;--teal-dark:#0a3f45;--sage:#e4efe9;--paper:#fbfaf6;--amber:#e8a33d;--ink:#1d2b2d;--muted:#5b6b6d;--line:#d3dfd9}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;color:var(--teal-dark)}
+a{color:var(--teal)}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* Navbar */
+.topbar{background:var(--teal-dark);color:#fff;font-size:.88rem;padding:6px 0}
+.topbar .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px}
+.topbar strong{color:var(--amber)}
+.navbar{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+.navbar .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;padding-top:12px;padding-bottom:12px}
+.brand{font-family:Georgia,serif;font-size:1.3rem;font-weight:bold;color:var(--teal-dark);text-decoration:none}
+.brand span{color:var(--amber)}
+.menu{display:flex;flex-wrap:wrap;gap:4px;list-style:none}
+.menu a{display:block;padding:8px 14px;border-radius:6px;text-decoration:none;color:var(--ink);font-weight:500}
+.menu a:hover{background:var(--sage)}
+.menu a.aktif{background:var(--teal);color:#fff}
+
+/* Hero */
+.hero{background:linear-gradient(120deg,var(--teal-dark),var(--teal));color:#fff;padding:70px 0}
+.hero .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center}
+.hero h1{color:#fff;font-size:2.6rem;margin-bottom:16px}
+.hero p{max-width:52ch;margin-bottom:24px;color:#d9ece8}
+.igd{background:#fff;color:var(--ink);border-radius:12px;padding:28px;border-left:8px solid var(--amber)}
+.igd h2{font-size:1.1rem;margin-bottom:6px}
+.igd .nomor{font-family:Georgia,serif;font-size:2.6rem;font-weight:bold;color:var(--teal-dark);line-height:1.1}
+.igd p{color:var(--muted);margin:6px 0 0;font-size:.95rem}
+.tombol{display:inline-block;background:var(--amber);color:#2b1d00;padding:12px 26px;border-radius:8px;font-weight:600;text-decoration:none;border:0;font-size:1rem;cursor:pointer}
+.tombol:hover{background:#f0b34f}
+
+.judul-halaman{background:var(--sage);padding:44px 0;border-bottom:1px solid var(--line)}
+.judul-halaman h1{font-size:2.2rem}
+.judul-halaman p{color:var(--muted);max-width:60ch}
+
+/* Section */
+section.blok{padding:56px 0}
+section.alt{background:var(--sage)}
+.blok h2{font-size:1.8rem;margin-bottom:8px}
+.blok .intro{color:var(--muted);margin-bottom:28px;max-width:62ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.kartu{background:#fff;border:1px solid var(--line);border-radius:10px;padding:24px}
+.kartu h3{font-size:1.15rem;margin-bottom:8px}
+.kartu p{color:var(--muted);font-size:.96rem}
+.ikon{display:inline-flex;width:46px;height:46px;align-items:center;justify-content:center;background:var(--sage);border-radius:50%;font-size:1.4rem;margin-bottom:12px}
+.dua-kolom{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.angka{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin-top:28px}
+.angka div{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px;text-align:center}
+.angka b{display:block;font-family:Georgia,serif;font-size:1.9rem;color:var(--teal)}
+.daftar{padding-left:20px}
+.daftar li{margin-bottom:6px}
+.timeline{border-left:3px solid var(--teal);padding-left:20px;list-style:none}
+.timeline li{margin-bottom:16px}
+.timeline b{color:var(--teal-dark)}
+
+/* Tabel jadwal */
+.bungkus-tabel{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:10px}
+table{width:100%;border-collapse:collapse;min-width:640px}
+th,td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:var(--teal);color:#fff;font-weight:600}
+tr:last-child td{border-bottom:0}
+tbody tr:nth-child(even){background:var(--paper)}
+.status{display:inline-block;padding:2px 10px;border-radius:20px;font-size:.82rem;background:var(--sage);color:var(--teal-dark)}
+
+/* Form */
+.form{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px}
+.form label{display:block;font-weight:600;margin:14px 0 4px}
+.form input,.form select,.form textarea{width:100%;padding:11px 12px;border:1px solid #b9c9c2;border-radius:7px;font:inherit;background:#fff}
+.form textarea{min-height:100px;resize:vertical}
+.form .tombol{margin-top:20px;width:100%}
+.pesan-error{display:none;background:#fdeaea;color:#8a1f1f;border:1px solid #e9b5b5;padding:10px 14px;border-radius:7px;margin-top:14px;font-size:.95rem}
+.pesan-error.tampil{display:block}
+
+/* Login */
+.halaman-login{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;background:linear-gradient(120deg,var(--teal-dark),var(--teal))}
+.login-box{display:grid;grid-template-columns:1fr 1fr;max-width:820px;width:100%;background:#fff;border-radius:14px;overflow:hidden}
+.login-info{background:var(--sage);padding:40px 32px}
+.login-info h1{font-size:1.8rem;margin-bottom:12px}
+.login-info p{color:var(--muted)}
+.login-form{padding:40px 32px}
+.login-form h2{margin-bottom:4px}
+.login-form .petunjuk{color:var(--muted);font-size:.9rem}
+
+/* Footer */
+footer{background:var(--teal-dark);color:#cfe3de;padding:36px 0;margin-top:0}
+footer .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+footer h3{color:#fff;font-size:1.05rem;margin-bottom:8px}
+footer a{color:var(--amber)}
+.hak-cipta{text-align:center;font-size:.85rem;padding-top:20px;margin-top:20px;border-top:1px solid #1f6068}
+
+/* Responsif */
+@media (max-width:760px){
+ .hero .wrap,.dua-kolom,.login-box{grid-template-columns:1fr}
+ .hero h1{font-size:2rem}
+ .hero{padding:44px 0}
+ .menu a{padding:6px 10px;font-size:.92rem}
+}
+.judul-kecil{margin-top:24px}
+.form-login .form{border:0;padding:0;margin-top:8px}
