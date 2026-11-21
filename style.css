@@ -45,7 +45,21 @@ section.alt{background:var(--sage)}
 .kartu{background:#fff;border:1px solid var(--line);border-radius:10px;padding:24px}
 .kartu h3{font-size:1.15rem;margin-bottom:8px}
 .kartu p{color:var(--muted);font-size:.96rem}
-.ikon{display:inline-flex;width:46px;height:46px;align-items:center;justify-content:center;background:var(--sage);border-radius:50%;font-size:1.4rem;margin-bottom:12px}
+.ikon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.ikon img {
+  width: 100%;
+  height: 100%;              
+  object-fit: contain;
+}
 .dua-kolom{display:grid;grid-template-columns:1fr 1fr;gap:32px}
 .angka{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin-top:28px}
 .angka div{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px;text-align:center}
@@ -87,8 +101,30 @@ tbody tr:nth-child(even){background:var(--paper)}
 /* Footer */
 footer{background:var(--teal-dark);color:#cfe3de;padding:36px 0;margin-top:0}
 footer .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+.grup-ikon-kontak {
+  display: flex;
+  gap: 10px;
+  margin: 8px 0;
+  display: flex;
+}
+.for-kontak {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.for-kontak img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  transform: scale(1.4);
+}
 footer h3{color:#fff;font-size:1.05rem;margin-bottom:8px}
-footer a{color:var(--amber)}
+footer a{color:var(--amber);    
+text-decoration:none;
+}
 .hak-cipta{text-align:center;font-size:.85rem;padding-top:20px;margin-top:20px;border-top:1px solid #1f6068}
 
 /* Responsif */
