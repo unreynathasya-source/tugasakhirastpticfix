@@ -1,4 +1,3 @@
-// JavaScript hanya untuk pengecekan login (sesuai ketentuan TR)
 document.getElementById("formLogin").addEventListener("submit", function (e) {
   e.preventDefault();
   var user = document.getElementById("username").value;
@@ -6,7 +5,7 @@ document.getElementById("formLogin").addEventListener("submit", function (e) {
   var pesan = document.getElementById("pesanError");
 
   if (user === "admin" && pass === "admin123") {
-    window.location.href = "index.html";
+    window.location.href = "janji.html";
   } else {
     pesan.textContent = "Login gagal. Username atau password salah.";
     pesan.classList.add("tampil");
