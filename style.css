@@ -100,3 +100,7 @@ footer a{color:var(--amber)}
 }
 .judul-kecil{margin-top:24px}
 .form-login .form{border:0;padding:0;margin-top:8px}
+.menu a.menu-janji{background:var(--amber);color:#2b1d00;font-weight:600}
+.menu a.menu-janji:hover,.menu a.menu-janji.aktif{background:#f0b34f;color:#2b1d00}
+.ajakan{text-align:center}
+.ajakan .intro{margin-left:auto;margin-right:auto}
